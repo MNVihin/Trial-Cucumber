@@ -6,7 +6,8 @@ import io.cucumber.testng.AbstractTestNGCucumberTests;
 import io.cucumber.testng.CucumberOptions;
 
 @CucumberOptions(features = "src\\test\\resources\\FeatureFiles", glue = "org.stepsdefinition", dryRun = false, monochrome = true, tags = "@smoke",
-plugin = {"pretty","html:target/cucumber.html"})
+plugin = {"pretty", "json:target/cucumber-reports/cucumber.json",
+        "html:target/cucumber-html-report"})
 
 public class RunnerClass extends AbstractTestNGCucumberTests {
 
