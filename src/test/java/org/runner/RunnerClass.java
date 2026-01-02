@@ -11,6 +11,7 @@ plugin = {
 	    "html:target/cucumber-html-report1"
 	})
 
+
 public class RunnerClass extends AbstractTestNGCucumberTests {
 
 	/*
