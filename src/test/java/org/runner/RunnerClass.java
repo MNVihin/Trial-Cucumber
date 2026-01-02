@@ -1,12 +1,15 @@
 package org.runner;
 
-import org.testng.annotations.DataProvider;
-
 import io.cucumber.testng.AbstractTestNGCucumberTests;
 import io.cucumber.testng.CucumberOptions;
 
-@CucumberOptions(features = "src\\test\\resources\\FeatureFiles", glue = "org.stepsdefinition", dryRun = false, monochrome = true, tags = "@smoke",
-plugin = {"pretty","html:target/cucumber.html"})
+@CucumberOptions(features = "src\\test\\resources\\FeatureFiles", 
+glue = "org.stepsdefinition", dryRun = false, monochrome = true, tags = "@smoke",
+plugin = {
+	    "pretty",
+	    "json:target/cucumber-reports/cucumber.json",
+	    "html:target/cucumber-html-report1"
+	})
 
 public class RunnerClass extends AbstractTestNGCucumberTests {
 
