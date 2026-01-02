@@ -12,7 +12,7 @@ plugin = {
 	})
 
 
-public class RunnerClass extends AbstractTestNGCucumberTests {
+public class RunnerTest extends AbstractTestNGCucumberTests {
 
 	/*
 	 * @DataProvider(parallel = true)
